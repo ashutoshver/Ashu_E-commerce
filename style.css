@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 64px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+button.white {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  transition: 0.2s;
+}
+
+body {
+  width: 100%;
+}
+
+/* HEADER */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  padding: 8px 40px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#header .logo {
+  width: 15rem;
+  height: 7rem;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: greenyellow;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: greenyellow;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* HOME PAGE */
+
+#hero {
+  background-image: url(images/kiara.jpg);
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  background-position: top 5% right 0;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h4 {
+  margin-bottom: 1rem;
+}
+
+#hero h1 {
+  color: cornflowerblue;
+}
+
+#hero button {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* FEATURE */
+
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fe-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#feature .fe-box {
+  width: 200px;
+  text-align: center;
+  padding: 20px 15px;
+  box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  /* margin: 10px 1px; */
+}
+
+#feature .fe-box:hover {
+  box-shadow: 10px 10px 54px rgb(74, 62, 221, 0.1);
+}
+
+#feature .fe-box h6 {
+  display: inline-block;
+  cursor: pointer;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(6) h6 {
+  background-color: #fff2e5;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* PRODUCTS */
+
+#product1 {
+  text-align: center;
+  z-index: 1;
+}
+
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+#product1 .pro {
+  width: 23%;
+  min-height: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+
+}
+
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product1 .pro .description {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .pro .description span {
+  color: #606063;
+  font-size: 14px;
+}
+
+#product1 .pro .description h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 16px;
+}
+
+#product1 .pro .description i {
+  font-size: 12px;
+  color: rgb(243, 181, 25);
+}
+
+#product1 .pro .description h4 {
+  padding-top: 7px;
+  font-size: 19px;
+  font-weight: 700;
+  color: darkgreen;
+}
+
+#product1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  color: darkorchid;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/* BANNER */
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(images/banner.jpg);
+  width: 100%;
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner h4 {
+  color: white;
+  font-size: 26px;
+}
+
+#banner h2 {
+  color: white;
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+#banner h2 span {
+  color: red;
+}
+
+#banner button:hover {
+  background-color: greenyellow;
+  color: blue;
+}
+
+/*New arrivals same as upper products*/
+
+/*---------------------------------------------------------------------------------------------*/
+
+/* SMALL BANNER */
+
+#small-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#small-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(images/smallBanner-1.jpg);
+  min-width: 690px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#small-banner h4 {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#small-banner h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#small-banner span {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#small-banner .banner-box:hover button {
+  background-color: yellowgreen;
+  border: 1px solid yellowgreen;
+}
