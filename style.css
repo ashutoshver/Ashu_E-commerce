@@ -359,6 +359,10 @@ body {
   padding: 30px;
 }
 
+#small-banner .banner-box2 {
+  background-image: url(images/smallBanner2.jpg);
+}
+
 #small-banner h4 {
   color: white;
   font-size: 25px;
@@ -381,4 +385,48 @@ body {
 #small-banner .banner-box:hover button {
   background-color: yellowgreen;
   border: 1px solid yellowgreen;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/* BANNER-3 */
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+
+#banner3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(images/banner3-1.jpg);
+  min-width: 30%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#banner3 .ban-1 {
+  background-image: url(images/banner3-2.jpg);
+}
+
+#banner3 .ban-2 {
+  background-image: url(images/banner3-3.jpg);
+}
+
+#banner3 h2 {
+  color: white;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+#banner3 h3 {
+  color: #ec544e;
+  font-weight: 800;
+  font-size: 15px;
 }
