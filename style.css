@@ -76,7 +76,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  padding: 8px 40px;
+  padding: 1px 40px;
   position: sticky;
   top: 0;
   left: 0;
@@ -675,4 +675,77 @@ footer .copyright p {
     width: 70%;
   }
 
+}
+
+@media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px;
+  }
+
+  #feature .fe-box {
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+
+  #feature {
+    justify-content: space-between;
+  }
+
+  #header {
+    padding: 10px 20px;
+  }
+
+  #header .logo {
+    width: 12rem;
+    height: 5rem;
+  }
+
+  #hero {
+    background-position: 75%;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  #product1 .pro {
+    width: 100%;
+  }
+
+  #banner {
+    height: 40vh;
+  }
+
+  #small-banner .banner-box {
+    height: 40vh;
+  }
+
+  #small-banner .banner-box2 {
+    margin-top: 20px;
+  }
+
+  #banner3 {
+    padding: 0 20px;
+  }
+
+  #banner3 .banner-box {
+    width: 100%;
+  }
+
+  #newsletter .form {
+    width: 100%;
+  }
+
+  #newsletter {
+    padding: 40px 20px;
+  }
+
+  footer .copyright {
+    text-align: start;
+  }
 }
